@@ -47,7 +47,7 @@ void EnbinEditor::printEnbinData(std::string input) {
         file.read((char*)&entry, sizeof(Mapdata::Enbin::EnemyEntry));
 
 
-        printf("- Entry %d Information -\n", i + 1);
+        printf("- Entry %d Information -\n", i);
         printf("Enemy name: %s\n", entry.name);
         printf("Enemy behaviour: %s\n", entry.behavior);
         printf("Value 0x40: %s\n", entry._40);
